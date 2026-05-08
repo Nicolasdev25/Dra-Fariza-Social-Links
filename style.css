@@ -61,7 +61,7 @@ body {
 }
 
 .profile-bio i {
-  color: var(--cor-primaria) ;
+  color: var(--cor-primaria);
   margin-right: 5px;
   margin-bottom: 10px;
 }
@@ -110,17 +110,17 @@ body {
 }
 
 .card span {
-  
   font-weight: 800;
   line-height: 1.05;
 }
 
-.btn-click{
+.btn-click {
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--cor-primaria) linear-gradient(135deg, var(--cor-primaria), var(--cor-brilho));
+  background: var(--cor-primaria)
+    linear-gradient(135deg, var(--cor-primaria), var(--cor-brilho));
   color: white;
   font-weight: bold;
   padding: 20px 20px;
@@ -130,7 +130,8 @@ body {
 }
 
 .btn-click:hover {
-  background: var(--cor-primaria) linear-gradient(135deg, var(--cor-brilho), var(--cor-primaria));
+  background: var(--cor-primaria)
+    linear-gradient(135deg, var(--cor-brilho), var(--cor-primaria));
   box-shadow: 0 4px 12px rgba(181, 141, 91, 0.3);
 }
 
@@ -160,7 +161,10 @@ body {
   border: 2px solid var(--cor-borda);
   color: var(--cor-texto);
   background-color: rgba(181, 141, 91, 0.08);
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .social-links a:hover {
@@ -172,6 +176,3 @@ body {
 .social-links a i {
   font-size: 1.1rem;
 }
-
-
-

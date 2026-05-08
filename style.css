@@ -4,14 +4,112 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 14px;
+:root {
+  --cor-primaria: #b58d5b;
+  --cor-brilho: #e2c296;
+  --cor-titulo: #000000;
+  --cor-texto: #2d251c;
+  --cor-fundo: #f9f9f9;
+  --cor-borda: #b58d5b;
 }
 
 body {
-  height: 100vh;
-  background-image: url(./assets/bg-linktree-medicina.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat  ;
+  font-size: 14px;
+  background-color: var(--cor-fundo);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(c);
+  margin-bottom: 15px;
+  border: solid 3px var(--cor-borda);
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cor-titulo);
+  margin-bottom: 5px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.profile-bio {
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+}
+
+.profile-bio i {
+  color: var(--cor-primaria);
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.profile-crm {
+  font-size: 1rem;
+  color: var(--cor-texto);
+  margin-bottom: 20px;
+}
+
+.links-grid {
+  width: 100%;
+}
+
+.links-grid nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.card {
+  aspect-ratio: 1 / 1;
+  min-height: 150px;
+  border: 4px solid var(--cor-borda);
+  border-radius: 10px;
+  color: var(--cor-titulo);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px 8px;
+  background: var(--cor-fundo);
+  box-shadow: 0 2px 8px rgba(181, 141, 91, 0.14);
+  text-align: center;
+}
+
+.card i {
+  color: var(--cor-primaria);
+  font-size: clamp(3rem, 16vw, 4.5rem);
+  line-height: 1;
+  filter: drop-shadow(0 2px 2px rgba(45, 37, 28, 0.25));
+}
+
+.card span {
+  
+  font-weight: 800;
+  line-height: 1.05;
 }

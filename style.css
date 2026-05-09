@@ -55,15 +55,6 @@ body {
   text-align: center;
 }
 
-.mini-rim {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-left: -5px;
-  padding-top: 5px;
-
-}
-
 .profile-bio {
   font-size: 1.5rem;
   color: var(--cor-texto);
@@ -109,6 +100,16 @@ body {
   box-shadow: 0 2px 8px rgba(181, 141, 91, 0.14);
   text-align: center;
   margin-bottom: 10px;
+   transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.card:hover {
+  background-color: var(--cor-brilho);
+  color: var(--cor-titulo);
+  transform: translateY(-2px);
 }
 
 .card i {

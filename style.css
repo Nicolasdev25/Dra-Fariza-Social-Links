@@ -32,8 +32,8 @@ body {
 }
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: var(--cor-fundo);
   margin-bottom: 15px;
@@ -41,18 +41,27 @@ body {
 }
 .profile-image img {
   width: 100%;
-  height: 100%;
+  height:100%;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .profile-name {
+  font-family: "Courgette", cursive;
   font-size: 2rem;
-  font-weight: bold;
   color: var(--cor-titulo);
   margin-bottom: 5px;
   max-width: 350px;
   text-align: center;
+}
+
+.mini-rim {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: -5px;
+  padding-top: 5px;
+
 }
 
 .profile-bio {
@@ -112,28 +121,9 @@ body {
 .card span {
   font-weight: 800;
   line-height: 1.05;
+  font-size: 1rem;
 }
 
-.btn-click {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--cor-primaria)
-    linear-gradient(135deg, var(--cor-primaria), var(--cor-brilho));
-  color: white;
-  font-weight: bold;
-  padding: 20px 20px;
-  border-radius: 8px;
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.btn-click:hover {
-  background: var(--cor-primaria)
-    linear-gradient(135deg, var(--cor-brilho), var(--cor-primaria));
-  box-shadow: 0 4px 12px rgba(181, 141, 91, 0.3);
-}
 
 .footer {
   margin-top: 20px;
